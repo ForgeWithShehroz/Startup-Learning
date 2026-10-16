@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Recipes{% endblock %}
+
+{% block body %}
+
+<div class="form-box">
+
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+
+<h2 style="text-align:center;">Add Recipe</h2>
+<hr>
+
+<label>Recipe Name</label> <input type="text" name="r_name">
+
+<label>Description</label>
+
+<textarea name="r_desc"></textarea>
+
+<label>Image</label> <input type="file" name="r_image">
+
+<button type="submit">Add Recipe</button>
+
+</form>
+
+</div>
+
+<div style="width:420px;margin:auto;margin-top:20px;">
+<form>
+
+<label>Search Recipe</label> <input type="text" name="search" placeholder="Search recipe">
+
+<button type="submit">Search</button>
+
+</form>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+<table>
+
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Description</th>
+<th>Image</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+
+{% for r in rs %}
+
+	<tr>
+
+	<td>{{forloop.counter}}</td>
+
+	<td>{{r.r_name}}</td>
+
+	<td>{{r.r_desc}}</td>
+
+	<td>
+	<img src="/media/{{r.r_image}}" height="90">
+	</td>
+
+	<td>
+
+	<a href="{% url 'vege:delete_recepie' r.pk %}">
+	<button>Delete</button>
+	</a>
+
+	<a href="{% url 'vege:update_recepie' r.pk %}">
+	<button>Update</button>
+	</a>
+
+	</td>
+
+	</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% endblock %}
