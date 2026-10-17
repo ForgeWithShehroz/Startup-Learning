@@ -1,0 +1,9 @@
+1) git add <filename> // is used to add files  but to add all files use
+2) git add .  // . to add all files
+
+3) (git push origin main ) origin is the main repository where main is the branch
+
+4) to simply use git push command we have to tell the git that we will work on the repository for a long time to use it every time to push code i.e.
+git push -u origin main // then use
+
+git push
