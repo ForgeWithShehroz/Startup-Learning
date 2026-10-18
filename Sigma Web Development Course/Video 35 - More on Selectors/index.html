@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: black;
+            color: yellow;
+        }  */
+
+        /* .box::first-line {
+            color: chocolate;
+        } */
+
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* Attribute Selector and also grouping */
+        /* p, a, [data-color="primary"]{
+            background-color: brown;
+        } */
+
+        /*  .box:nth-child(even){
+            background-color: aqua;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: cornflowerblue;
+        } */
+
+        .boxes::before {
+            content: "Shehroz is good.";
+            color: blueviolet;
+        }
+
+        .boxes::after {
+            content: "Sigma Web Development Course is also good.";
+            color: rgb(12, 219, 12);
+        }
+
+        ::selection{
+            background-color: rgb(70, 43, 189);
+            color: silver;
+        }
+
+        .box::first-letter{
+            font-size: large;
+            color: orange;
+        }
+
+        input::placeholder{
+            color: peru;
+            background-color: saddlebrown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">I am first box</div>
+        <div class="box">Hey, I'm a box</div>
+        <div class="box">Hey, I'm a box</div>
+        <input type="text" placeholder="Enter your name here!">
+    </div>
+</body>
+
+</html>

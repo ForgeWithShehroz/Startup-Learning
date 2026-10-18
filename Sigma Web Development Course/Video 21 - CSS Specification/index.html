@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Specifying</title>
+	<style>
+		h1 {
+			color: aqua;
+		}
+
+		/* h1.cblack {
+			color: black;
+		} */
+		/* If we don't use !important it will have the highest priority withinn above and below as it specifity will be 1+10; */
+
+		.yellow {
+			color: yellow;
+			color: maroon !important;
+		}
+
+		.cred {
+			color: red;
+		}
+
+		.cpurple {
+			color: purple;
+		}
+
+		[data=a] {
+			color: wheat;
+		}
+		/* The specificity of this selector 1 + 10 + 10 + 10 + 10 = 41 */
+		a.harryclass.rohanclass[href]:hover{
+			color: blueviolet;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1 class="yellow cred cpurple cblack" data="a">CSS Specifying</h1>
+	</div>
+</body>
+
+</html>

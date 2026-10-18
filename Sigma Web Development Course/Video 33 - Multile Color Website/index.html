@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Navbar</title>
+    <style>
+        :root{
+            --primary-color : white;
+            --seccolor : rgb(153, 20, 20);
+            --thirdcolor : yellow;
+            --forthcolor : rgb(72, 78, 72);
+        }
+
+         *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgb(190, 82, 10);
+            border: 2px solid silver;
+        }
+
+        div nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 8px 0;
+        }
+
+        div nav ul li {
+            margin-left: 80px;
+            color: var(--primary-color);
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .searchbar{
+            margin-left: 360px;
+        }
+        button{
+            color: var(--primary-color);
+            background-color: #000000;
+            cursor: pointer;
+           
+        }*{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgb(190, 82, 10);
+            border: 2px solid silver;
+        }
+
+        div nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 8px 0;
+        }
+
+        div nav ul li {
+            margin-left: 80px;
+            color: var(--primary-color);
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .searchbar{
+            margin-left: 360px;
+        }
+        button{
+            color: var(--primary-color);
+            background-color: #000000;
+            cursor: pointer;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Contact Us</li>
+                </a>
+                <a href="#">
+                    <li>Purchase</li>
+                </a>
+                <a href="#">
+                    <li>Sell</li>
+                </a>
+                <a href="#" class="searchbar">
+                    <li><input type="text" placeholder="Search here!"><button type="submit">Search</button></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

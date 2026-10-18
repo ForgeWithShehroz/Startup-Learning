@@ -1,0 +1,10 @@
+.container{
+    background-color: rgb(9, 39, 9);
+    border: 2px solid black;
+    width: 70%;
+    height: 45vh;
+}
+
+.container p{
+    color: rgb(218, 183, 183);
+}

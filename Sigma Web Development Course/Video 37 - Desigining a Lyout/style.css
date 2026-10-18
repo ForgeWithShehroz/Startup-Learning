@@ -1,0 +1,124 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --seccolor: rgb(153, 20, 20);
+    --thirdcolor: yellow;
+    --forthcolor: silver;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    background-color: rgb(228, 206, 206);
+    border: 2px solid rgb(177, 156, 156);
+}
+
+div nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+div nav ul li {
+    margin-left: 80px;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.searchbar {
+    margin-left: 360px;
+}
+
+input::placeholder {
+    color: var(--forthcolor);
+}
+
+button {
+    color: var(--primary-color);
+    background-color: rgb(228, 206, 206);
+    cursor: pointer;
+    margin-left: 2px;
+
+}
+
+/* 
+main {
+    background-color: black; 
+} */
+/* As I did not liked to give the main the color black as it is not looking good */
+
+.main {
+    border: 2px solid rgb(26, 174, 219);
+    margin: 9px;
+    /* height: 60vh; */
+    background-color: coral;
+}
+
+.box {
+    display: flex;
+    border: 2px solid grey;
+    height: 28em;
+    margin: 25px 0 25px 145px;
+
+}
+
+.box1 {
+    display: inline-block;
+    width: 30em;
+    background-color: deeppink;
+}
+
+.box2 {
+    display: inline-block;
+    width: 30em;
+    background-color: firebrick;
+}
+
+.content {
+    margin: auto;
+    border: 2px solid rgb(218, 91, 32);
+    width: 700px;
+    height: 122px;
+    border-radius: 35px;
+
+}
+
+.pcontent {
+    text-align: center;
+    padding: 50px;
+    font-size: larger;
+    /* color: white; */
+    /* As I did not liked to do this */
+}
+
+.logo {
+    border: 2px solid silver;
+    background-image: url("logo.jpg");
+    background-size: 75%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* margin: -112px 0 0px 90%; */
+    position: fixed;
+    bottom: 23px;
+    right: 23px;
+}
+
+.footer {
+    background-color: rgb(95, 49, 49);
+    border: 2px solid rgb(90, 6, 6);
+    height: 6vh;
+    margin: 80px 0 200px 0;
+
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+
+        /* Class Selector*/
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector.*/
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        #div1 > p{
+            color: yellow;
+            background-color: darkblue;
+        } 
+
+         /* if we want that if p is inside the div then properties must apply but if element is not directly within the element we have to use descent selector like below */
+
+
+        /* Decent Selector */   
+        #div2 p{
+            background-color: forestgreen;
+            color: gainsboro;
+        }
+
+        /*Attribute Selector*/
+        [data=a]{
+            text-align: center;
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 2px;
+            padding: 0px;
+        }
+
+        /*Pseudo Selector*/
+        a:visited{
+            color: darkmagenta;
+        }
+        a:link{
+            color: hotpink;
+        }
+        a:active{
+            background-color: chartreuse;
+        }
+        a:hover{
+            background-color: paleturquoise;
+        }
+        p:first-child{
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <h1 data="a">Selectors</h1>
+    <main class="one">
+        <p>I'm first.</p>
+        <p>I'm second.</p>
+    </main>
+    <div class="red">
+        It's a div.
+    </div>
+
+    <div id="green">
+        I'm another div.
+    </div>
+
+    <div id="div1">
+        <p>This is a paragraph.</p>
+    </div>
+
+    <div id="div2">
+        <article>
+            <p>This is second para.</p>
+        </article>
+    </div>
+
+    <a href="www.google.com">Go to Google</a>
+    <a href="www.amazon.com">Go to Amazon</a>
+</body>
+</html>

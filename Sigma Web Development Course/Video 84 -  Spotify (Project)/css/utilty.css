@@ -1,0 +1,64 @@
+.border {
+    border: 2px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+
+.bg-grey{
+    background-color: #121212;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.fontBold{
+    font-weight: 700;
+}
+
+.cardContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* 2. Track background (Spotify keeps this transparent so the content shows through) */
+.cardContainer::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* 3. The draggable handle (translucent white/grey that pops on hover) */
+.cardContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  /* Matches your background color (#121212) to create padding spacing */
+  border: 3px solid #121212; 
+}
+
+/* 4. Handle hover state (gets brighter when you hover over it) */
+.cardContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

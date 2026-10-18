@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            width: 30vw;
+            height: 80vh;
+        }
+
+        .box{
+         
+            width: 34px;
+            height: 42px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ShehrozAnimation;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ShehrozAnimation {
+            from{
+   background-color: violet;
+            }
+            to{
+                transform: translateX(90vw);   background-color: rgb(16, 177, 142);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

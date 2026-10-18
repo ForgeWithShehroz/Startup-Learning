@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid goldenrod;
+            /*It will give to container but not the elements are enlarged even if the display flex is used */
+            height: 80vh;
+            display: flex;
+            /* justify-content: center; */
+
+            /* justify-items: ; is not a part of flexbox.  There is no justify-items in flexbox. */
+
+            /* align-items: center; */
+            /* align-content: flex-start; */
+
+            /* flex-direction: column; */
+            /* flex-wrap:wrap; */
+            /* or instead of these (direction and wrap use the shorthand) */
+            flex-flow: row wrap;
+            /* gap: 40px; */
+            /* row-gap: 30px;
+            column-gap: 12px; */
+
+            gap: 40px 12px;
+            /* gap shorthand as gap: row column; */
+        }
+
+        .item {
+            flex-grow: 1;
+            text-align: center;
+            background-color: blueviolet;
+            color: darkorange;
+            width: 62px;
+            height: 62px;
+            border: 2px solid rgb(20, 106, 156);
+            /* margin: 4px; */
+        }
+
+        /* .order-1{
+            order: 100;
+        } */
+
+        .flexgrow2{
+            flex-grow: 3;
+        }
+
+        .flexshrink2{
+            flex-shrink: 2;
+        }
+
+        .alignself{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item alignself">4</div>
+        <div class="item">5</div>
+        <div class="item flexshrink2">6</div>
+        <div class="item">7</div>
+        <div class="item flexgrow2">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item ">11</div>
+    </div>
+</body>
+
+</html>

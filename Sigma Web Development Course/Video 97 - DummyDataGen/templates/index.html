@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Generator</title>
+</head>
+<body>
+
+    <button id="dbButton">Trigger Database Action</button>
+
+    <script>
+        document.getElementById("dbButton").addEventListener("click", async () => {
+            // Send a request to the backend Express server
+            const response = await fetch('/generate', { method: 'POST' });
+            const data = await response.json();
+            
+            // Alert the response message coming from your server
+            alert(data.message);
+        });
+    </script>
+</body>
+</html>

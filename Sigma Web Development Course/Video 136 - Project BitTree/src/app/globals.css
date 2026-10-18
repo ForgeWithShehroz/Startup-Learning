@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Ensure this maps correctly to the --font-link-sans variable from Next.js */
+  --font-linksans: var(--font-link-sans), sans-serif;
+}
