@@ -96,3 +96,123 @@ Desktop.ini
 # ==============================
 /.pnp
 
+# ==========================================
+# 🐍 PYTHON & DJANGO (Backend)
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.installed.cfg
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+pip-selfcheck.json
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+
+# Test reports / Coverage
+htmlcov/
+.tox/
+.nosexml
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ==========================================
+# ⚡ NEXT.JS & NODE (Frontend)
+# ==========================================
+
+# Dependencies
+node_modules/
+/npm-debug.log*
+/yarn-errors.log*
+/yarn-debug.log*
+/npm-debug.log*
+/pnpm-debug.log*
+
+# Next.js Build Output
+.next/
+out/
+dist/
+
+# Vercel deployment cache
+.vercel
+
+# Testing
+/coverage/
+.nyc_output
+
+# ==========================================
+# 🌐 HTML / CSS / FRONTEND TOOLING
+# ==========================================
+
+# CSS preprocessor caches & build artifacts
+.sass-cache/
+*.css.map
+*.sass.map
+
+# Compiled assets or build output folders for raw HTML setups
+# (Uncomment the line below if you use an asset processor like Gulp or Webpack into a public folder)
+# /public/dist/
+
+# ==========================================
+# 🔒 SECURITY & ENV VARIABLES (Crucial)
+# ==========================================
+# Never commit your local secrets or credentials!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ==========================================
+# 💻 IDE, EDITORS & OS METADATA
+# ==========================================
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Operating Systems
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
