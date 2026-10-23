@@ -1,2 +1,1 @@
-# Django-Course
-I practised to a middle of django from django courses and books
+All courses I have learned and practised
