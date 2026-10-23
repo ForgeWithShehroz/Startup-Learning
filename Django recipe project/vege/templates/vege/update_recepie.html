@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Recepies{% endblock %}
+
+{% block CSS %}
+
+	
+	#heading2{
+		padding:-10px;
+	}
+	#maindiv{
+		text-align : center;
+		border:1px solid black;
+		margin-left:400px;
+		margin-right:400px;
+		padding-bottom:60px;
+	}
+	#r_name{
+	padding-right:0px;
+	width: 530px; 
+	height: 17px;"
+	}
+	#r_desc{
+	width: 530px; 
+	height: 54px;"
+	}
+	#btn{
+		display:inline-block;
+	}
+	table{
+		border:1px solid black
+		
+	}
+	td, th{
+		border:1px solid black
+	}
+	
+
+{% endblock %}
+
+{% block body %}
+
+<form method="post" enctype="multipart/form-data">
+	<div class="container mt-5" id="maindiv">
+		
+			{% csrf_token %}
+		<h2 id="heading2">Update Recepie</h2>
+		<hr>
+
+		<div>
+		<label for="r_name" >Recepie Name</label><br>
+		<input type="text" class="form-control" name="r_name" id="r_name" value=" {{r.r_name}} ">
+	</div>
+
+	<div class="mb-3">
+		<label for="r_desc">Recepie Description</label><br>
+		<textarea id="r_desc" name="r_desc"> {{r.r_desc}} </textarea>
+	</div>
+
+	<div>
+		<label for="r_image" name="r_image">Recepie Image</label>
+		<br>
+		<input type="file"  name="r_image" id="r_image">
+	</div>
+
+	<button id="btn" type="submit">Update Recepie</button>
+
+	</div>
+</form>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

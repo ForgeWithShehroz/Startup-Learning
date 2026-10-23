@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block css %}
+table th, td {
+			border: 1px solid black;
+		}
+
+		{% endblock %}
+{% block body %}
+<table>
+		<thead>
+			<tr>
+				<th>  </th>
+				<th>Column2</th>
+			</tr>
+<!-- 			<tr>Food</tr>
+			<tr>Food</tr>
+ -->		</thead>
+		<tbody>
+			<tr>
+				<!-- <td colspan="2">Rowspan</td> -->
+				<td>Data A</td>
+				<td>Data B</td>
+			</tr>
+			<tr>
+				<!-- <td></td> -->
+				<td>Data C</td>
+				<td>Data D</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+		</tbody>
+	</table>
+	{% endblock %}
